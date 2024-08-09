@@ -114,8 +114,15 @@ button {
   text-align: center;
 }
 
+.footer-btn-about:hover,
+.footer-btn-yachts:hover,
+.footer-btn-reviews:hover {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
 .footer-social {
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .footer-social-list {
@@ -123,13 +130,13 @@ button {
   justify-content: center;
   gap: 8px;
   padding: 0;
-  margin: 0;
   list-style: none;
 }
 
 .footer-icon {
   width: 24px;
   height: 24px;
+  fill: white;
 }
 
 .footer-text {
