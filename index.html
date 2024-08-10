@@ -19,7 +19,7 @@
 
   
   <script type="module" crossorigin src="/yachtadventures/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/yachtadventures/assets/index-63c5a7b2.css">
+  <link rel="stylesheet" href="/yachtadventures/assets/index-9d8801f1.css">
 </head>
 
 <body>
@@ -214,9 +214,77 @@
 </section>
     <section class="rentayacht section">
   <div class="rentayacht-container container">
-    Rent a yacht
+    <div class="rentayacht-block">
+      <h2 class="rentayacht-title" id="rent">Rent a yacht now</h2>
+
+      <form>
+        <input
+          class="rentayacht-input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Full name"
+          required
+        />
+
+        <input
+          class="rentayacht-input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,}).([A-Za-z]{2,8})"
+          required
+        />
+
+        <input
+          class="rentayacht-input"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone number"
+          pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+          required
+        />
+        <div class="rentayacht-textarea-box">
+          <textarea
+            class="rentayacht-textarea"
+            id="message"
+            name="message"
+            placeholder="Comment"
+            required
+          ></textarea>
+        </div>
+
+        <button class="rentayacht-btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="rentayacht-picture">
+      <picture>
+        <source
+          srcset="/yachtadventures/assets/rentayacht-desk-658x536-@1x-08ae141c.png 1x, /yachtadventures/assets/rentayacht-desk-658x536-@2x-8b5dd453.png 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="/yachtadventures/assets/rentayacht-tablet-704x534-@1x-c04f1083.jpg 1x, /yachtadventures/assets/rentayacht-tablet-704x534-@2x-6af4f958.jpg 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="/yachtadventures/assets/rentayacht-mob-335x412-@1x-9875d437.jpg 1x, /yachtadventures/assets/rentayacht-mob-335x412-@2x-c5d829e4.jpg 2x"
+          media="(max-width:767px)"
+        />
+        <img
+          srcset="/yachtadventures/assets/rentayacht-tablet-704x534-@1x-c04f1083.jpg 1x, /yachtadventures/assets/rentayacht-tablet-704x534-@2x-6af4f958.jpg 2x"
+          src="/yachtadventures/assets/rentayacht-tablet-704x534-@1x-c04f1083.jpg"
+          alt="Yacht for rent"
+          class="rentayacht-img"
+        />
+      </picture>
+    </div>
   </div>
 </section>
+
     <section class="reviews section">
   <div class="reviews-container container">
     Reviews
