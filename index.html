@@ -19,7 +19,7 @@
 
   
   <script type="module" crossorigin src="/yachtadventures/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/yachtadventures/assets/index-67b41fbe.css">
+  <link rel="stylesheet" href="/yachtadventures/assets/index-018c3710.css">
 </head>
 
 <body>
@@ -64,21 +64,24 @@
         </li>
       </ul>
 
-      <svg class="head-menu-mob" width="28" height="28">
-        <use href="/yachtadventures/assets/icons-a84b0c7f.svg#icon-menu-mob"></use>
-      </svg>
+      <button class="head-btn-icon" type="button" data-modal-open>
+        <svg class="head-menu-mob" width="28" height="28">
+          <use href="/yachtadventures/assets/icons-a84b0c7f.svg#icon-menu-mob"></use>
+        </svg>
+
+      </button>
     </div>
   </div>
 </header>
   <!--======== MOBILE MENU =======-->
-<div class="mobile-menu is-open">
+<div class="mobile-menu is-open" data-modal>
   <div class="mobile-menu-container container">
     <div class="mobile-menu-box">
       <div class="mobile-box-menu-nav">
         <nav class="mobile-menu-navigation">
           <a class="page-mobile-logo" href="./index.html"> yachtjet </a>
         </nav>
-        <button class="mobile-menu-close">
+        <button class="mobile-menu-close" data-modal-close>
           <svg class="modal-close-btn-icon" width="16" height="16">
             <use href="/yachtadventures/assets/icons-mobile-388c727a.svg#icon-close-btn"></use>
           </svg>
@@ -88,7 +91,7 @@
         <ul class="mobile-button-menu-list">
           <li class="mobile-button-menu-item">
             <button type="button" class="button-in-mobile current-mobile">
-              <a class="mobile-menu-link" href="./index.html">About</a>
+              <a class="mobile-menu-link" href="#about">About</a>
             </button>
           </li>
           <li class="mobile-button-menu-item">
@@ -107,30 +110,21 @@
       <div class="container-svg-mobile">
         <ul class="header-soc-list-mobile">
           <li class="header-soc-item-mobile">
-            <a
-              class="header-soc-link-mobile"
-              href="https://www.instagram.com/goitclub/"
-            >
+            <a class="header-soc-link-mobile" href="https://www.instagram.com/goitclub/">
               <svg class="svg-soc-container-mobile-menu" width="20" height="20">
                 <use href="/yachtadventures/assets/icons-mobile-388c727a.svg#icon-instagram-link"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a
-              class="header-soc-link-mobile"
-              href="https://www.instagram.com/goitclub/"
-            >
+            <a class="header-soc-link-mobile" href="https://www.instagram.com/goitclub/">
               <svg class="svg-soc-container-mobile-menu" width="20" height="20">
                 <use href="/yachtadventures/assets/icons-mobile-388c727a.svg#icon-Vector-youtube"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a
-              class="header-soc-link-mobile"
-              href="https://www.youtube.com/c/GoIT"
-            >
+            <a class="header-soc-link-mobile" href="https://www.youtube.com/c/GoIT">
               <svg class="svg-soc-container-mobile-menu" width="20" height="20">
                 <use href="/yachtadventures/assets/icons-mobile-388c727a.svg#icon-facebook-link"></use>
               </svg>
@@ -141,7 +135,6 @@
     </div>
   </div>
 </div>
-
 
   <main>
     <section class="hero">
@@ -164,7 +157,7 @@
     <section class="aboutus section">
   <div class="aboutus-container container">
     <div class="aboutus-position">
-      <h2 class="cutter" id="yachts">YachtJet fleet is here to take you on the ultimate adventure</h2>
+      <h2 class="cutter" id="about">YachtJet fleet is here to take you on the ultimate adventure</h2>
       <div class="text-block ">
         <p class="first-block">From spacious decks to state-of-the-art technology, our yachts are designed
           to
