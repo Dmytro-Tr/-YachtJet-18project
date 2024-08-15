@@ -20,7 +20,7 @@
 
   
   <script type="module" crossorigin src="/yachtadventures/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/yachtadventures/assets/index-f47595ae.css">
+  <link rel="stylesheet" href="/yachtadventures/assets/index-fe5522e2.css">
 </head>
 
 <body>
@@ -68,7 +68,8 @@
         </li>
       </ul>
 
-      <button class="head-btn-icon" type="button" id="modalmenubtn" data-modal-open>
+      <button class="head-btn-icon js-open-menu" type="button" id="modalmenubtn" aria-expanded="false"
+        aria-controls="mobile-menu" data-modal-open>
         <svg class="head-menu-mob" width="28" height="28">
           <use href="/yachtadventures/assets/icons-a84b0c7f.svg#icon-menu-mob"></use>
         </svg>
@@ -78,14 +79,14 @@
   </div>
 </header>
   <!--======== MOBILE MENU =======-->
-<div class="mobile-menu " data-modal>
+<div class="mobile-menu js-menu-container" id="mobile-menu">
   <div class="mobile-menu-container container">
     <div class="mobile-menu-box">
       <div class="mobile-box-menu-nav">
         <nav class="mobile-menu-navigation">
           <a class="page-mobile-logo" href="./index.html"> yachtjet </a>
         </nav>
-        <button class="mobile-menu-close" data-modal-close>
+        <button class="mobile-menu-close js-close-menu" data-modal-close>
           <svg class="modal-close-btn-icon" width="16" height="16">
             <use href="/yachtadventures/assets/icons-mobile-388c727a.svg#icon-close-btn"></use>
           </svg>
@@ -94,7 +95,7 @@
       <div class="mobile-box-button">
         <ul class="mobile-button-menu-list">
           <li class="mobile-button-menu-item">
-            <a class="mobile-menu-link current-mobile button-in-mobile" href="#about">About</a>
+            <a class="mobile-menu-link button-in-mobile" href="#about">About</a>
           </li>
           <li class="mobile-button-menu-item">
             <a class="mobile-menu-link button-in-mobile" href="#yachts">Yachts</a>
@@ -154,7 +155,6 @@
     <a class="hero-anchor" href="#rent">Yacht rental</a>
   </div>
 </section>
-
     <section class="aboutus section">
   <div class="aboutus-container container">
     <div class="aboutus-position">
@@ -531,7 +531,9 @@
 </section>
   </footer>
 
-
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
   
 </body>
 
